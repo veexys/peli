@@ -1,0 +1,116 @@
+/* tyylit.css IH 2017/2022*/
+
+body{
+    background-color: #9475;
+    padding-left: 200px;
+    
+}
+
+#pelialue{
+    position: relative;
+    width: 410px;
+    height: 400px;
+    left:400px;
+    background-color: bisque;
+    border-radius: 9%;
+    border:palegreen 4px;
+}
+
+p{
+    position: absolute;
+    box-sizing: border-box;
+    left:50px;
+    width: 310px;
+    height: 310px;
+    padding:10px;
+    border: rgb(91, 173, 81) solid 4px;
+    border-radius: 5%;
+    background-color: burlywood;
+    color:rgb(120, 177, 70);
+    font-size: 16pt;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#keskirivi{
+    position:relative;
+    width: 100%; 
+    top:30px;
+}
+
+button{
+    position: absolute;
+    border-radius: 10px;
+    background-color:#83d66a; 
+    color:rgb(92, 205, 75);
+    font-size: 14pt;
+    width:300px;
+    height: 40px;
+    outline:none;
+}
+
+#lansi{
+    top:280px;
+    left:42px;
+    transform-origin: bottom left;
+    transform: rotate(-90deg); 
+}
+
+#ita{ 
+     top:20px;
+    left:405px;
+    transform-origin: left top;
+    transform: rotate(90deg); 
+}
+
+#pohjoinen{   
+    left:55px;
+    top:6px;  
+}
+
+#etela{    
+    left:55px;
+    top:365px;
+}
+
+.eivalittavissa{
+    visibility: hidden; 
+}
+
+.valittavissa{
+    visibility: visible;     
+}
+#valinnat button{
+    width: 395px;
+    background-color:#ff0000;
+    color:  rgb(0, 0, 0);
+    left:620px;
+    top: 30px;
+}
+
+#uusiPeli {
+    width: 395px;
+    left:620px;
+
+}
+footer{
+    padding-left:400px;
+    padding-left:1em;
+    color:rgb(118, 204, 68);
+    font-size:  small;
+}
+
+h1{
+    margin-left: 10px;
+}
+
+.huone8{
+	background-color:rgba(76, 203, 182, 0.871);
+}
+.huone8 h1{
+	color:rgba(255, 0, 255, 0.829);	
+}
+
+.huone1 button{
+	color:rgb(255, 255, 255);
+}
