@@ -1,0 +1,27 @@
+{
+    "huoneNro": 2,
+    "huoneteksti": "Lähdet kävelemään ja tajuat että olet nälkäinen. Sinulla ei kuitenkaan ole rahaa ruokaan. Etsi pulloja, yksi pullo on yksi rahe, tarvitset 8 rahea.",
+    "huonehp": null,
+    "pohjoinen": {"huoneeseen": 4, "avain": null},
+    "ita": {"huoneeseen": 3, "avain": null},
+    "etela": {"huoneeseen": 1, "avain": null},
+    "lansi": {"huoneeseen": 5, "avain": null},
+    "vastustaja": {
+        "nimi": "",
+        "teksti": "",
+        "voittoviesti": "",
+        "tappioviesti": "",
+        "pisteet": 100,
+        "hp": 10,
+        "voittoraja": 10
+    },
+    "avain": {
+        "nimi": "avain",
+        "numero": 1,
+        "teksti": "Avain kimmeltää kultaisena.",
+        "vaikutus": "Avain näyttäisi sopivan vanhaan riippulukkoon!",
+        "pisteet": 150,
+        "hp": 0
+    },
+    "esine": null         
+}

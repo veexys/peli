@@ -1,0 +1,19 @@
+{
+    "huoneNro": 13,
+    "huoneteksti": "Olet nyt Alepassa voit ostaa megaforcen yhdellä rahella.", 
+    "huonehp": {
+        "hp": 10, 
+        "tekstit": {
+            "vaikutus": "Olet ulkona. Tajusit ettei sinulla ole rahaa! Päätät lähteä pullojen etsintään ", 
+            "loppu": "kaikki voimat käytetty"
+        }, 
+        "toistoLkm": 2
+    },
+    "pohjoinen": {"huoneeseen": 11, "avain": null},
+    "ita": null,
+    "etela": null,
+    "lansi": null,
+    "vastustaja": null,
+    "avain": null,
+    "esine": null
+}
