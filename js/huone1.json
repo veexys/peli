@@ -1,0 +1,21 @@
+
+    {
+        "huoneNro": 1,
+        "huoneteksti": "Heräät sängystäsi nälkäisenä. Puet vaatteet päällesi ja päätät lähteä ulos syömään.", 
+        "huonehp": {
+            "hp": 10, 
+            "tekstit": {
+                "vaikutus": "Olet ulkona. Tajusit ettei sinulla ole rahaa! Päätät lähteä pullojen etsintään ", 
+                "loppu": "kaikki voimat käytetty"
+            }, 
+            "toistoLkm": 2
+        },
+        "pohjoinen": {"huoneeseen": 2, "avain": null},
+        "ita": null,
+        "etela": null,
+        "lansi": null,
+        "vastustaja": null,
+        "avain": null,
+        "esine": null
+    }
+    
