@@ -28,7 +28,7 @@ const TASO = {
             "huoneNro": 1,
             "huoneteksti": "Heräät sängystäsi nälkäisenä. Puet vaatteet päällesi ja päätät lähteä ulos.", 
             "huonehp": {
-                "hp": 10, 
+                "hp": 100, 
                 "tekstit": {
                     "vaikutus": "", 
                     "loppu": "kaikki voimat käytetty"
@@ -77,7 +77,7 @@ const TASO = {
                 "teksti": "",
                 "vaikutus": "Löysit yhden pullon.",
                 "pisteet": 1,
-                "hp": -5
+                "hp": 0,
             }},
             {
                 "huoneNro": 4,
@@ -94,7 +94,7 @@ const TASO = {
                     "teksti": "Lattialla on taskulamppu, jolla voit valaista tietäsi",
                     "vaikutus": "Nyt voi mennä myös pimeisiin huoneisiin.",
                     "pisteet": 200,
-                    "hp": 0
+                    "hp": 100
                 },
                 "esine": null
             },
@@ -102,7 +102,7 @@ const TASO = {
                 "huoneNro": 5,
                 "huoneteksti": "löysit kaksi pulloa.",
                 "huonehp": {
-                    "hp": 10, 
+                    "hp": 100, 
                     "tekstit": {
                         "vaikutus":"Huone on täynnä kultapölyä. Kullan näkeminen piristää kummasti.", 
                         "loppu": "Kultakin loppuu aikanaan"
@@ -138,7 +138,7 @@ const TASO = {
                     "voittoviesti": "Ohikulkija antoi sinulle 2 rahea.",
                     "tappioviesti": "kuolit",
                     "pisteet": 2,
-                    "hp": 0,
+                    "hp": 100,
                     "voittoraja": 0
                 },
                 "avain": null,
@@ -146,7 +146,7 @@ const TASO = {
                     "teksti": "Huoneen keskellä on pullo. Etiketissä lukee \"palauttaa voimia\".",
                     "vaikutus": "",
                     "pisteet": 0,
-                    "hp": 10
+                    "hp": 100
                 }
             },
             {
@@ -166,7 +166,7 @@ const TASO = {
         "huoneNro": 8,
         "huoneteksti": "kompastuit kahteen pulloon.", 
         "huonehp": {
-            "hp": 10, 
+            "hp": 100, 
             "tekstit": {
                 "vaikutus": "", 
                 "loppu": "kaikki voimat käytetty"
@@ -195,7 +195,7 @@ const TASO = {
             "voittoviesti": "Voitit S.U.M.O:n! Onnea! Aarre odottaa lattialla.",
             "tappioviesti": "Hävisit ottelun. S.U.M.O on edelleen voittamaton.",
             "pisteet": 0,
-            "hp": 90,
+            "hp": 100,
             "voittoraja": 0
         },
         "avain": null,
