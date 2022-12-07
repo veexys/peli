@@ -2,7 +2,7 @@
 
 const TASO = {
     "tekijät": ["Ropi Toivonen, Tobias Parviainen, Polina Pikova ja Veetu Miettinen"],
-    "pelaajanAlkuHP": 1020,
+    "pelaajanAlkuHP": 100,
     "pelaajanMaksimiHP": 100,
     "pisterajaYhdelleHplle": 100,
     "pelinAloitushuoneenNro": 1,
