@@ -2,17 +2,17 @@
 
 const TASO = {
     "tekijät": ["Ropi Toivonen, Tobias Parviainen, Polina Pikova ja Veetu Miettinen"],
-    "pelaajanAlkuHP": 20,
+    "pelaajanAlkuHP": 1020,
     "pelaajanMaksimiHP": 100,
     "pisterajaYhdelleHplle": 100,
     "pelinAloitushuoneenNro": 1,
-    "pelinLoppuhuoneenNro": 13,
+    "pelinLoppuhuoneenNro": 0,
     "tekstit": {
         "pohjoinen":"Pohjoinen",
         "ita":"Itä",
         "etela":"Etelä",
         "lansi":"Länsi",
-        "pisteotsikko":"Pisteet:",
+        "pisteotsikko":"Pullot:",
         "hpotsikko":"HP:",
         "uusiNappi":"Aloita uusi peli",
         "voitto": "Onnea olet läpäissyt pelin.",
@@ -52,19 +52,12 @@ const TASO = {
             "etela": {"huoneeseen": 1, "avain": null},
             "lansi": {"huoneeseen": 5, "avain": null},
             "vastustaja": null,
-            "avain": {
-                "nimi": "",
-                "numero": 1,
-                "teksti": "",
-                "vaikutus": "",
-                "pisteet": 0,
-                "hp": 0
-            },
+            "avain": null,
             "esine": null         
         },
         {
             "huoneNro": 3,
-            "huoneteksti": "Löysit yhden pullon.",
+            "huoneteksti": "kävelet kadulla",
             "huonehp": null,
             "pohjoinen": {"huoneeseen": 6, "avain": null},
             "ita":  null,
@@ -74,11 +67,12 @@ const TASO = {
             "avain": null,
             "esine": {
                 "nimi": "pullo",
-                "teksti": "",
-                "vaikutus": "Löysit yhden pullon.",
+                "teksti": "ja löysit yhden pullon",
+                "vaikutus": "pullo kerätty",
                 "pisteet": 1,
                 "hp": 0,
-            }},
+            }
+        },
             {
                 "huoneNro": 4,
                 "huoneteksti": "Ei pulloja, jatka etsimistä!",
@@ -88,38 +82,38 @@ const TASO = {
                 "etela": {"huoneeseen": 2, "avain": null},
                 "lansi": null,
                 "vastustaja": null,
-                "avain": {
-                    "nimi": "taskulamppu",
-                    "numero": 2,
-                    "teksti": "Lattialla on taskulamppu, jolla voit valaista tietäsi",
-                    "vaikutus": "Nyt voi mennä myös pimeisiin huoneisiin.",
-                    "pisteet": 200,
-                    "hp": 100
-                },
-                "esine": null
+                "avain": null,
+                "esine": null 
             },
             {
                 "huoneNro": 5,
-                "huoneteksti": "löysit kaksi pulloa.",
+                "huoneteksti": "kävelet kadulla",
                 "huonehp": {
                     "hp": 100, 
                     "tekstit": {
-                        "vaikutus":"Huone on täynnä kultapölyä. Kullan näkeminen piristää kummasti.", 
-                        "loppu": "Kultakin loppuu aikanaan"
+                        "vaikutus":"", 
+                        "loppu": ""
                     }, 
                     "toistoLkm": 1
                 },
-                "pohjoinen": {"huoneeseen": 7, "avain": null,
-                "ita": {"huoneeseen": 2, "avain":null,
-                "etela": null},
-                "lansi": {"huoneeseen": 11, "avain": 1},
+                "pohjoinen": {"huoneeseen": 7, "avain": null},
+                "ita": {"huoneeseen": 2, "avain":null},
+                "etela": null,
+                "lansi": {"huoneeseen": 11, "avain": null},
                 "vastustaja": null,
                 "avain": null,
-                "esine": null  
-            }},
+                "esine": {
+                    "nimi": "kaksi pulloa",
+                    "teksti": "löysit pulloja",
+                    "vaikutus": "Pullot kerätty",
+                    "pisteet": 2,
+                    "hp": 0
+                    }
+             
+            },
             {
                 "huoneNro": 6,
-                "huoneteksti": "Pyydät ohikulkijalta rahea he antavat niitä 2. ",
+                "huoneteksti": "ohikulkija kävelee ja miettii omiaan... ",
                 "huonehp": {
                     "hp": 0, 
                     "tekstit": {
@@ -134,24 +128,20 @@ const TASO = {
                 "lansi": {"huoneeseen": 8, "avain": null},
                 "vastustaja": {
                     "nimi": "ohikulkija",
-                    "teksti": "ohikulkija kävelee ja miettii omiaan...",
+                    "teksti": "Pyydät ohikulkijalta rahea he antavat niitä 2.",
                     "voittoviesti": "Ohikulkija antoi sinulle 2 rahea.",
-                    "tappioviesti": "kuolit",
+                    "tappioviesti": "",
                     "pisteet": 2,
-                    "hp": 100,
+                    "hp": 0,
                     "voittoraja": 0
                 },
                 "avain": null,
-                "esine": {"nimi": "",
-                    "teksti": "Huoneen keskellä on pullo. Etiketissä lukee \"palauttaa voimia\".",
-                    "vaikutus": "",
-                    "pisteet": 0,
-                    "hp": 100
-                }
+                "esine": null
+                
             },
             {
                 "huoneNro": 7,
-                "huoneteksti": "puskasta kimaltelee tölkki ja keräät sen. Löysit yhden pullon.",
+                "huoneteksti": "kävelet kadulla",
                 "huonehp": null,
                 "pohjoinen": null,
                 "ita": null,
@@ -159,27 +149,33 @@ const TASO = {
                 "lansi": null,
                 "vastustaja": null,
                 "avain": null,
-                "esine": null
+                "esine":  {
+                    "nimi": "yksi pullon",
+                    "teksti": "puskasta kimaltelee tölkki ja keräät sen. Löysit yhden pullon.",
+                    "vaikutus": "Pullo kerätty",
+                    "pisteet": 1,
+                    "hp": 0
+                    }
             },
             
     {
         "huoneNro": 8,
-        "huoneteksti": "kompastuit kahteen pulloon.", 
-        "huonehp": {
-            "hp": 100, 
-            "tekstit": {
-                "vaikutus": "", 
-                "loppu": "kaikki voimat käytetty"
-            }, 
-            "toistoLkm": 2
-        },
+        "huoneteksti": "kävelet kadulla.", 
+        "huonehp": null,
         "pohjoinen": {"huoneeseen": 9, "avain": null},
         "ita": {"huoneeseen": 6, "avain":null},
         "etela": null,
         "lansi": {"huoneeseen": 4, "avain": null},
         "vastustaja": null,
         "avain": null,
-        "esine": null
+        "esine": {
+        "nimi": "kaksi pulloa",
+        "teksti": "kompastuit Kahteen pulloon",
+        "vaikutus": "Pullot kerätty",
+        "pisteet": 2,
+        "hp": 0
+        }
+
     },
     {
         "huoneNro": 9,
@@ -189,30 +185,17 @@ const TASO = {
         "ita": null,
         "etela":{"huoneeseen": 8, "avain": null},
         "lansi": {"huoneeseen": 10, "avain": null},
-        "vastustaja": {
-            "nimi": "S.U.M.O",
-            "teksti": "S.U.M.O robotti odottaa vastustajaa.",
-            "voittoviesti": "Voitit S.U.M.O:n! Onnea! Aarre odottaa lattialla.",
-            "tappioviesti": "Hävisit ottelun. S.U.M.O on edelleen voittamaton.",
-            "pisteet": 0,
-            "hp": 100,
-            "voittoraja": 0
-        },
+        "vastustaja": null,
         "avain": null,
-        "esine": {"nimi": "Legendaarinen aarre",
-            "teksti": "Häikäisevä seuraavan sukupolven tekstiseikkailu odottaa ottajaansa.",
-            "vaikutus": "Nyt heti pelaamaan uutta vielä julkaisematonta tekstiseikkailua!",
-            "pisteet": 100,
-            "hp": 100
-        }},
+        "esine": null},
         {
             "huoneNro": 10,
-            "huoneteksti": "Olet päässyt pasilan kuninkaaseen, voit syödä aterian 7:llä rahella.", 
+            "huoneteksti": "Olet päässyt pasilan kuninkaaseen, voit syödä aterian 8:llä rahella.", 
             "huonehp": {
                 "hp": 10, 
                 "tekstit": {
-                    "vaikutus": "xxx", 
-                    "loppu": "kaikki voimat käytetty"
+                    "vaikutus": "", 
+                    "loppu": ""
                 }, 
                 "toistoLkm": 2
             },
@@ -226,12 +209,12 @@ const TASO = {
         },
         {
             "huoneNro": 11,
-            "huoneteksti": "Olet nyt Alepan parkkipaikalla.", 
+            "huoneteksti": "Olet nyt Alepan parkkipaikalla, voit palauttaa pullot alepassa raheksi.", 
             "huonehp": {
                 "hp": 10, 
                 "tekstit": {
-                    "vaikutus": "Olet ulkona. Tajusit ettei sinulla ole rahaa! Päätät lähteä pullojen etsintään ", 
-                    "loppu": "kaikki voimat käytetty"
+                    "vaikutus": "", 
+                    "loppu": ""
                 }, 
                 "toistoLkm": 2
             },
@@ -245,12 +228,12 @@ const TASO = {
         },
         {
             "huoneNro": 12,
-            "huoneteksti": "Umpikuja...", 
+            "huoneteksti": "Umpikuja, ", 
             "huonehp": {
                 "hp": 10, 
                 "tekstit": {
-                    "vaikutus": "Olet ulkona. Tajusit ettei sinulla ole rahaa! Päätät lähteä pullojen etsintään ", 
-                    "loppu": "kaikki voimat käytetty"
+                    "vaikutus": "täällä ei ole mitään...", 
+                    "loppu": ""
                 }, 
                 "toistoLkm": 2
             },
@@ -264,12 +247,12 @@ const TASO = {
         },
         {
             "huoneNro": 13,
-            "huoneteksti": "Olet nyt Alepassa voit ostaa megaforcen yhdellä rahella.", 
+            "huoneteksti": "Olet nyt Alepassa ", 
             "huonehp": {
                 "hp": 10, 
                 "tekstit": {
-                    "vaikutus": "Olet ulkona. Tajusit ettei sinulla ole rahaa! Päätät lähteä pullojen etsintään ", 
-                    "loppu": "kaikki voimat käytetty"
+                    "vaikutus": "", 
+                    "loppu": ""
                 }, 
                 "toistoLkm": 2
             },
@@ -279,10 +262,13 @@ const TASO = {
             "lansi": null,
             "vastustaja": null,
             "avain": null,
-            "esine": null
+            "esine": {
+                "nimi": "yksi megaforce",
+                "teksti": "",
+                "vaikutus": "Megaforce ostettu",
+                "pisteet": -1,
+                "hp": 0
+                }
         }
-        
-
-       
     ]
 };
