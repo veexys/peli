@@ -1,0 +1,19 @@
+{
+    "huoneNro": 5,
+    "huoneteksti": "löysit kaksi pulloa.",
+    "huonehp": {
+        "hp": 10, 
+        "tekstit": {
+            "vaikutus":"Huone on täynnä kultapölyä. Kullan näkeminen piristää kummasti.", 
+            "loppu": "Kultakin loppuu aikanaan"
+        }, 
+        "toistoLkm": 1
+    },
+    "pohjoinen": {"huoneeseen": 7, "": null,
+    "ita": {"huoneeseen": 2, "":null,
+    "etela": null},
+    "lansi": {"huoneeseen": 11, "avain": 1},
+    "vastustaja": null,
+    "avain": null,
+    "esine": null  
+}}

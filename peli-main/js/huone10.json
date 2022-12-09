@@ -1,0 +1,19 @@
+{
+    "huoneNro": 10,
+    "huoneteksti": "Olet päässyt pasilan kuninkaaseen, voit syödä aterian 7:llä rahella.", 
+    "huonehp": {
+        "hp": 10, 
+        "tekstit": {
+            "vaikutus": "", 
+            "loppu": "kaikki voimat käytetty"
+        }, 
+        "toistoLkm": 2
+    },
+    "pohjoinen": null,
+    "ita":{"huoneeseen": 9, "": null},
+    "etela": null,
+    "lansi": null,
+    "vastustaja": null,
+    "avain": null,
+    "esine": null
+}

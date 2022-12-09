@@ -1,0 +1,12 @@
+{
+    "huoneNro": 7,
+    "huoneteksti": "puskasta kimaltelee tölkki ja keräät sen. Löysit yhden pullon.",
+    "huonehp": null,
+    "pohjoinen": null,
+    "ita": null,
+    "etela": {"huoneeseen": 5, "avain": null},
+    "lansi": null,
+    "vastustaja": null,
+    "avain": null,
+    "esine": null
+}

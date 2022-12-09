@@ -1,0 +1,17 @@
+{
+"huoneNro": 3,
+"huoneteksti": "Löysit yhden pullon.",
+"huonehp": null,
+"pohjoinen": {"huoneeseen": 6, "": null},
+"ita":  null,
+"etela": null,
+"lansi":{"huoneeseen": 2, "": null},
+"vastustaja": null,
+"avain": null,
+"esine": {
+    "nimi": "energiajuoma",
+    "teksti": "Takaseinällä olevassa hyllyssä on pölyinen energiajuomapullo",
+    "vaikutus": "ilmeisesti juoma oli pilaantunutta ja siitä aiheutui vatsanväänteitä",
+    "pisteet": 0,
+    "hp": -5
+}}

@@ -1,0 +1,32 @@
+{
+    "huoneNro": 6,
+    "huoneteksti": "Pyydät ohikulkijalta rahaa he antavat 2€ ",
+    "huonehp": {
+        "hp": -5, 
+        "tekstit": {
+            "vaikutus":"Katosta putusi pieni kivi päähäsi. Terveytesi heikkeni hieman.", 
+            "loppu": "kaikki kivet pudonneet"
+        }, 
+        "toistoLkm": 10
+    },
+    "pohjoinen": null,
+    "ita": null,
+    "etela": {"huoneeseen": 3, "":null,
+    "lansi": {"huoneeseen": 8, "avain": null},
+    "vastustaja": {
+        "nimi": "ohikulkija",
+        "teksti": "ohikulkija kävelee ja miettii omiaan...",
+        "voittoviesti": "Ohikulkija antoi sinulle 2 rahea.",
+        "tappioviesti": "",
+        "pisteet": 2,
+        "hp": 30,
+        "voittoraja": 0
+    },
+    "avain": null,
+    "esine": {"nimi": "elämän eliksiiri",
+        "teksti": "Huoneen keskellä on pullo. Etiketissä lukee \"palauttaa voimia\".",
+        "vaikutus": "Olosi tuntuu taas pirteämmältä",
+        "pisteet": 0,
+        "hp": 10
+    }
+}}

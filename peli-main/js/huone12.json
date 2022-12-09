@@ -1,0 +1,19 @@
+{
+    "huoneNro": 12,
+    "huoneteksti": "Umpikuja...", 
+    "huonehp": {
+        "hp": 10, 
+        "tekstit": {
+            "vaikutus": "Olet ulkona. Tajusit ettei sinulla ole rahaa! Päätät lähteä pullojen etsintään ", 
+            "loppu": "kaikki voimat käytetty"
+        }, 
+        "toistoLkm": 2
+    },
+    "pohjoinen": null,
+    "ita": null,
+    "etela":{"huoneeseen": 11, "": null},
+    "lansi": null,
+    "vastustaja": null,
+    "avain": null,
+    "esine": null
+}
